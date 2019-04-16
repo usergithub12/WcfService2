@@ -20,6 +20,7 @@ namespace WcfService2
             database.Add(new Data { Value = x, Time = DateTime.Now });
             var lastvalue = database.Last();
             cb.CallbackFunction($"Hello from callback <{lastvalue.Value}> {DateTime.Now}");
+            
         }
     }
     public class Data
